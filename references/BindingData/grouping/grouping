@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <h1>Bootcamp Enrollment Form</h1>
+  <!-- ng forms tells if things are valid and does a number of operations -->
+  <form action="" #userForm="ngForm"> 
+
+    <!-- NG GROUP DIRECTIVE -->
+    <!-- TO CREATE IT YOU WRAP THE INPUT FIELDS INSIDE A DIVV WITH THE NGGROUP DIRECTIVE LIKE THIS -->
+    <div ngModelGroup="address">
+    <!-- the address contains 3 different information -->
+      <div class="form-group">
+        <label for="">Street</label>
+        <input ngModel type="text" name="street" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="">city</label>
+        <input ngModel type="text" name="city" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="">state</label>
+        <input ngModel type="text" name="state" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="">postal code</label>
+        <input ngModel type="text" name="postalCode" class="form-control">
+      </div>
+
+    </div>
+    
+    <button class="btn btn-primary" type="submit">Submit Form</button>
+
+  </form>
+</div>
